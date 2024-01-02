@@ -1,0 +1,56 @@
+{% extends 'main.html' %}
+
+ {% block title %}
+  {{ title }}
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Kontakt</h3>
+        <p>
+          Michał Kaczmarek <br />Adres: ul. Opisowa 20, 61-619 Poznań<br />telefon: 123456789
+        </p>
+        <form>
+          <div id="contact-form" class="form-container" data-form-container>
+            <div class="row">
+              <div class="form-title">
+                <span>Formularz kontaktowy</span>
+              </div>
+            </div>
+            <div class="input-container">
+              <div class="row">
+                <span class="req-input">
+                  <span class="input-status" data-toggle="tooltip" data-placement="top" title="Input Your First and Last Name."></span>
+                  <input type="text" data-min-length="8" placeholder="Imię i nazwisko" />
+                </span>
+              </div>
+              <div class="row">
+                <span class="req-input">
+                  <span class="input-status" data-toggle="tooltip" data-placement="top" title="Email"></span>
+                  <input type="email" placeholder="Email" />
+                </span>
+              </div>
+              <div class="row">
+                <span class="req-input">
+                  <span class="input-status" data-toggle="tooltip" data-placement="top" title="Phone number"></span>
+                  <input type="tel" placeholder="Numer telefonu" />
+                </span>
+              </div>
+              <div class="row">
+                <span class="req-input message-box">
+                  <span class="input-status" data-toggle="tooltip" data-placement="top" title="Please Include a Message."></span>
+                  <textarea type="textarea" data-min-length="10" placeholder="Wiadomość"></textarea>
+                </span>
+              </div>
+              <div class="row submit-row">
+                <button type="button" class="btn btn-block submit-form">Wyślij</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}
